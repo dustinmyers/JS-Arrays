@@ -111,7 +111,9 @@ var finder = function() {
 var str = 'this is my sentence';
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
 
-  //Code Here
+function reverse(str) {
+  return str.split('').reverse().join('');
+}
 
 
 //Next Problem
@@ -128,8 +130,21 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   myGroceryList then return the new, updated grocery list.
 */
 
-  //Code Here
+var removeItem = function(myGroceryList, itemToRemove) {
+  if (myGroceryList.indexOf(itemToRemove) > 0) {
+    myGroceryList.splice(myGroceryList.indexOf(itemToRemove), 1)
+  }
+  return myGroceryList;
+}
 
+removeItem(myGroceryList, 'corndogs');
+
+var addItem = function(myGroceryList, itemToAdd) {
+  myGroceryList.push(itemToAdd);
+  return myGroceryList;
+}
+
+addItem(myGroceryList, 'macaroni');
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
@@ -141,8 +156,8 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
-  //Code Here
-
+var numFunc = function();
+  var 
 
 
 //Next Problem
